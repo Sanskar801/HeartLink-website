@@ -1,9 +1,12 @@
 import React from 'react'
 import logo from '../../assets/logo.svg';
+import IconButton from '../ui/IconButton';
+import { Moon, Languages } from 'lucide-react';
+import CtaButton from '../ui/CtaButton';
 
 const Header = () => {
     return (
-        <header className='py-2 px-4 h-20 bg-black flex items-center'>
+        <header className='py-2 px-4 h-20 bg-gray-500 flex items-center'>
 
             <div className='flex items-center gap-2.5'>
                 <img src={logo}
@@ -12,6 +15,16 @@ const Header = () => {
                 <span className='text-pink-400 font-bold text-2xl'>HeartLink</span>
             </div>
 
+            <div>
+                <IconButton icon={<Moon />} />
+                <IconButton icon={<Languages />} />
+
+                {/* This button will only be rendered after scrolling on hero section */}
+                <CtaButton buttonText={'Join WaitList'} />
+
+            </div>
+
+            {/* Mobile and Tab menu */}
 
         </header>
     )

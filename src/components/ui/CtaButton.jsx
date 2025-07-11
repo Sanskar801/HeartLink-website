@@ -1,8 +1,10 @@
 import React from 'react'
 
-const CtaButton = () => {
+const CtaButton = ({buttonText}) => {
   return (
-    <div>CtaButton</div>
+    <button>
+        {buttonText}
+    </button>
   )
 }
 
