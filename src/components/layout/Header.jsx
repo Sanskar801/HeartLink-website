@@ -9,7 +9,8 @@ const navigationItems = [
     { label: 'How It Works', href: '#how-it-works' },
     { label: 'Testimonials', href: '#testimonials' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Download', href: '#download' }
+    { label: 'Download', href: '#download' },
+    { label: 'Contact Us', href: '#contact' }
 ];
 
 const Header = () => {

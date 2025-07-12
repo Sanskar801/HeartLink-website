@@ -3,7 +3,7 @@ import CtaButton from '../components/ui/CtaButton'
 
 const Hero = () => {
     return (
-        <section className='flex p-4 mx-6 justify-around items-center h-[90vh]'>
+        <section id='home' className='flex p-4 mx-6 justify-around items-center h-[90vh]'>
 
             <div>
                 <p>From First Swipe to Forever</p>

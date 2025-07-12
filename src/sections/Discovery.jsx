@@ -2,7 +2,7 @@ import React from 'react'
 
 const Discovery = () => {
   return (
-    <div>Discovery</div>
+    <div className='h-screen'>Discovery</div>
   )
 }
 

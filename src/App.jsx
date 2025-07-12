@@ -1,6 +1,6 @@
 import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
-import { RelationshipModule } from './components/RelationshipModule'
+import ScrollToTop from './components/ui/ScrollToTop'
 import Discovery from './sections/Discovery'
 import Hero from './sections/Hero'
 import Relationship from './sections/Relationship'
@@ -13,12 +13,15 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Discovery />
-      <Relationship />
-      <Testimonials />
-      <Waitlist />
+      <main>
+        <Hero />
+        <Discovery />
+        <Relationship />
+        <Testimonials />
+        <Waitlist />
+      </main>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }
