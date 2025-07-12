@@ -4,9 +4,18 @@ import IconButton from '../ui/IconButton';
 import { Moon, Languages } from 'lucide-react';
 import CtaButton from '../ui/CtaButton';
 
+
+const navigationItems = [
+    { label: 'Features', href: '#features' },
+    { label: 'How It Works', href: '#how-it-works' },
+    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Pricing', href: '#pricing' },
+    { label: 'FAQ', href: '#faq' }
+];
+
 const Header = () => {
     return (
-        <header className='py-2 px-4 h-20 bg-gray-500 flex items-center'>
+        <header className='py-2 px-8 h-20 bg-gray-500 flex items-center justify-between'>
 
             <div className='flex items-center gap-2.5'>
                 <img src={logo}
@@ -16,6 +25,18 @@ const Header = () => {
             </div>
 
             <div>
+                <ul className='flex space-x-8'>
+                    {navigationItems.map((items) => (
+                        <li key={items.label}>
+                            <a href={items.href}>
+                                {items.label}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className='flex justify-between gap-4'>
                 <IconButton icon={<Moon />} />
                 <IconButton icon={<Languages />} />
 
