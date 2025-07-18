@@ -1,11 +1,9 @@
 import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
 import ScrollToTop from './components/ui/ScrollToTop'
-import Discovery from './sections/Discovery'
+import Working from './sections/Working'
 import Hero from './sections/Hero'
-import Relationship from './sections/Relationship'
-import Testimonials from './sections/Testimonials'
-import Waitlist from './sections/Waitlist'
+import Breather from './sections/Breather'
 
 function App() {
 
@@ -15,15 +13,13 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Discovery />
-        <Relationship />
-        <Testimonials />
-        <Waitlist />
+        <Working />
+        <Breather />
       </main>
       <Footer />
       <ScrollToTop />
     </>
-  )
+  );
 }
 
 export default App

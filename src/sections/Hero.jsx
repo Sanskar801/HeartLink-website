@@ -1,25 +1,33 @@
 import React from 'react'
 import CtaButton from '../components/ui/CtaButton'
+import ImageCard from '../components/ui/ImageCard';
+import romanticDate from '../assets/Romantic-Date.webp';
 
 const Hero = () => {
     return (
-        <section id='home' className='flex p-4 mx-6 justify-around items-center h-[90vh]'>
+        <section id='home' className='flex flex-col h-[100vh]'>
 
-            <div>
-                <p>From First Swipe to Forever</p>
-                <p className='w-[25rem]'>HeartLink seamlessly evolves with your relationship — from discovery and connection to managing life together in one beautiful platform.</p>
-                <div className='flex gap-4'>
-                    <button>Discover More</button>
-                    <CtaButton buttonText={'Join Waitlist'} />
-                </div>
+            {/* Background Text */}
+            {/* <div>
+                <p className='font-medium lg:text-[20rem] text-[6rem]'>HeartLink</p>
+            </div> */}
+
+            {/* Image cards */}
+
+            <div className='flex gap-4 h-max'>
+                <ImageCard imageUrl={romanticDate} description={'Couples on romantic date'} />
+                <ImageCard imageUrl={romanticDate} description={'Couples on romantic date'} />
+                <ImageCard imageUrl={romanticDate} description={'Couples on romantic date'} />
+                <ImageCard imageUrl={romanticDate} description={'Couples on romantic date'} />
             </div>
 
-            <div>
-                <div className='bg-pink-300 h-[30rem] w-[20rem]'></div>
-            </div>
+            <p className='text-center'>From First Swipe to Forever</p>
+            <p className='text-center'>This valentine match with your soulmate</p>
+
+            <CtaButton buttonText={'Join The Beta'} />
 
         </section>
-    )
+    );
 }
 
-export default Hero
+export default Hero;
